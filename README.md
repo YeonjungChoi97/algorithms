@@ -1,3 +1,5 @@
 # daily-dose-of-algorithms
 
-Lets movee some robots
+Daily does of studying algorithms!
+
+Mostly from Baekjoon, https://www.acmicpc.net/
