@@ -24,7 +24,7 @@ def dfs(graph, v, visited):
 
 def bfs(graph, start, visited):
     queue = deque([start])
-    visit[start] = True
+    visited[start] = True
     while queue:
         v = queue.popleft()
         print(v, end= ' ')
