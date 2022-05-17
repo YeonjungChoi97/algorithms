@@ -8,7 +8,7 @@ from collections import deque
 n, m, v = map(int, input().split())
 
 #graph 를 initialise 함, graph[0]의 포지션은 비워두기위해 N+1 의 길이를 갖는 리스트 생성 
-graph = [[] for _ in range(N + 1)]
+graph = [[] for _ in range(n + 1)]
 
 for _ in range(M):
   m1, m2 = map(int, input().split())
