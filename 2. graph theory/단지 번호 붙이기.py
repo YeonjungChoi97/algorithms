@@ -45,5 +45,6 @@ for i in range(n):
             count = 0
 
 print(result)
+house_no.sort()
 for i in house_no:
     print(i)
