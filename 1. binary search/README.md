@@ -1,3 +1,4 @@
+# Simple Binary Search
 #### Psuedocode
 
 1. Let min = 0 and max = n-1.
