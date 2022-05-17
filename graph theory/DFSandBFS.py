@@ -10,7 +10,7 @@ n, m, v = map(int, input().split())
 #graph 를 initialise 함, graph[0]의 포지션은 비워두기위해 N+1 의 길이를 갖는 리스트 생성 
 graph = [[] for _ in range(n + 1)]
 
-for _ in range(M):
+for _ in range(m):
   m1, m2 = map(int, input().split())
   graph[m1].append(m2)
   graph[m2].append(m1)
@@ -22,7 +22,7 @@ def dfs(graph, v, visited):
         if not visited[1]:
             ds(graph, i, visited)
 
-def bfs(graph, v, visited):
+def bfs(graph, start, visited):
     queue = deque([start])
     visit[start] = True
     while queue:
