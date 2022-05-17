@@ -1,6 +1,7 @@
 #백준 1260
 #DFS: Depth First Search, uses stack to find the shortest path, better when target is far from source, faster
 #BFS: Breadth First Search, uses Queue to find the shortest path, better when target is closer to source, slower
+#a basic of the basics 
 
 from collections import deque
 
@@ -14,7 +15,8 @@ for _ in range(m):
     m1, m2 = map(int, input().split())
     graph[m1].append(m2)
     graph[m2].append(m1)
-
+    graph[m1].sort()
+    graph[m2].sort()
 
 def dfs(graph, v, visited):
     visited[v] = True
